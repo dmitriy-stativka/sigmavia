@@ -124,7 +124,8 @@ section{
         background: url('../images/arrow_back.png') no-repeat center center;
         background-size: cover;
         display: block;
-        transform: rotate(180deg);
+        transform: rotate(180deg) scale(1);
+        transition: transform .3s ease;
         margin-left: 5px;
       }
 
@@ -135,6 +136,13 @@ section{
           width: 45px;
           height: 45px;
           margin-left: 15px;
+        }
+      }
+
+      &:hover{
+        &:after{
+          transform: rotate(180deg) scale(1.1);
+          transition: transform .3s ease;
         }
       }
     }
